@@ -112,5 +112,5 @@ wordsWithFoldr str = (\(c,s) -> if null c then s else c:s) $ foldr f ([],[]) str
 
 unlinesWithFoldr :: [String] -> String
 unlinesWithFoldr str =
-  foldr (\a b -> a ++ "\n" ++ b) "\n" str
+  foldr (\a b -> a ++ "\n" ++ b) [] str
 
